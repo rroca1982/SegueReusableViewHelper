@@ -6,13 +6,13 @@ This library is a mix of a few different ideas you might find in tutorials aroun
 
 ## Installation
 
-Cocoapods
+### Cocoapods
 
 ```ruby
 pod 'SegueReusableViewHelper'
 ```
 
-## Manually
+### Manually
 
 This project has no dependencies, so, you can just download and add the swift files to your project if you want to.
 
