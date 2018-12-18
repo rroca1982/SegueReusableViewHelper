@@ -1,10 +1,10 @@
-#SegueReusableViewHelper
+# SegueReusableViewHelper
 
 A simple, protocol-oriented way, to deal with reusable views, segue handling and instantiation through storyboard ids without having loose literal strings throuout your code. 
 
 This library is a mix of a few different ideas you might find in tutorials around the web, added together into a single, ready to use library.
 
-##Installation
+## Installation
 
 Cocoapods
 
@@ -12,13 +12,13 @@ Cocoapods
 pod 'SegueReusableViewHelper'
 ```
 
-##Manually
+## Manually
 
 This project has no dependencies, so, you can just download and add the swift files to your project if you want to.
 
-##How to use it 
+## How to use it 
 
-###- Segue Handling
+### - Segue Handling
 
 Create an externsion to your view controller and adopt the SegueHandlerType protocol. Inside the extension create an enum called SegueIdentifer, type String, and add your segue names as cases.
 
@@ -51,7 +51,7 @@ Don't forget to add the enum case as an identifier to the segue on the storyboar
 
 That's it, now you can handle segue identifiers in code without using literal strings or using a bunch of global constants and with access to auto-completion.
 
-###- Storyboard ID instantiation Handling
+### - Storyboard ID instantiation Handling
 
 Add an extension to the view controller that want to instantiate and adopt the StoryboardIDHandlerType protocol.
 
@@ -68,7 +68,7 @@ On the view controller where you'll instantiate the second, do this:
 
 In the storyboard scene for the second controller, remember to add its name ("SecondViewController" in this case) as its Storyboard ID in the identity inspector.
 
-###- ReusableView and NibLoadableView
+### - ReusableView and NibLoadableView
 
 They work with any view, but are specially useful for UITableViewCells or UICollectionViewCells. In this example, we'll cover how to use these protocols with a TableView Cell created using a standalone xib.
 
